@@ -10,7 +10,7 @@ import librosa
 import librosa.display
 import os
 def time_spectrum(file):
-
+    #phan tich tren mien thoi gian
     x, sr = librosa.load(file)
     onset_frames = librosa.onset.onset_detect(y=x, sr=sr)
     onset_times = librosa.frames_to_time(onset_frames)
